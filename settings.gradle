@@ -1,2 +1,5 @@
-rootProject.name = 'for-delete'
+rootProject.name = 'ru.vkras'
+include 'backend'
+include 'frontend'
+include 'frontend'
 
