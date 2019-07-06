@@ -1,0 +1,22 @@
+<mat-dialog-content class="mat-typography">
+  <form class="form-for-target">
+    <mat-form-field class="text-field-are-width">
+      <input matInput placeholder="Имя банка" [(ngModel)]="bank.name" name="entity">
+    </mat-form-field>
+    <mat-form-field class="text-field-are-width">
+      <input matInput placeholder="Сокращенное имя банка" [(ngModel)]="bank.name_mini" name="mappingBody">
+    </mat-form-field>
+    <mat-form-field class="text-field-are-width">
+      <input matInput placeholder="Кор. счет банка" [(ngModel)]="bank.account" name="script">
+    </mat-form-field>
+    <mat-form-field class="text-field-are-width">
+      <input matInput placeholder="Бик банка" [(ngModel)]="bank.bik_bank" name="source">
+    </mat-form-field>
+    <mat-form-field class="text-field-are-width">
+      <input matInput placeholder="Адрес банка" [(ngModel)]="bank.address" name="target">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close (click)="create(this.bank)">Создать</button>
+</mat-dialog-actions>

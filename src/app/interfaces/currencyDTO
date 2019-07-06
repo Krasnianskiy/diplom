@@ -1,0 +1,10 @@
+export interface CurrencyDTO {
+
+  id: number;
+
+  alfa_code: string;
+
+  alfa2_code: string;
+
+  course: string;
+}
