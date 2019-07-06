@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class BankDTO {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String account;
@@ -28,11 +28,14 @@ public class BankDTO {
         this.address = address;
     }
 
-    public long getId() {
+    public BankDTO() {
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

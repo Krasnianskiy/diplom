@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "currency")
 public class CurrencyDTO {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String alfa_code;
@@ -21,11 +21,14 @@ public class CurrencyDTO {
         this.course = course;
     }
 
-    public long getId() {
+    public CurrencyDTO(){
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
